@@ -30,7 +30,7 @@
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.6)
     ),
-    url("/Assignment\ 03\ Stater/images/banner.jpg");
+    url(/images/banner.jpg);
   background-size: cover;
   color: #fff;
 }
@@ -58,6 +58,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .nav-container .navbar-items {
   padding: 20px 30px;

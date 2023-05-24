@@ -1,55 +1,56 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   #banner {
     position: relative;
     background-image: linear-gradient(
         rgba(34, 34, 34, 0.6),
         rgba(34, 34, 34, 0.6)
       ),
-      url(/Assignment\ 03\ Stater/images/banner.jpg);
+      url(/images/banner.jpg);
     background-size: cover;
     color: #fff;
   }
 
+  /* Navigation Bar */
+
   .nav-container {
     display: flex;
-    flex-direction: column;
     flex-shrink: 0;
-    justify-content: flex-start;
-    padding: 24px;
   }
-  .nav-container .navbar-items {
-    border: none !important;
-    width: 100%;
-  }
+
   .avata {
     display: none;
   }
   .avata-center {
-    margin: 0;
+    margin-left: 56px;
   }
   .info-center {
     display: none;
   }
-  /* Mục tiêu nghề nghiệp- Thông tin cá nhân */
+
+  /* Mục tiêu */
   .bg-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
   }
 
-  /* Kinh nghiệm, ..., */
+  /* Kinh Nghiệm,..., */
   .job-info-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: auto;
   }
 
   /* Chứng chỉ giải thưởng */
   .certificate {
     width: auto;
+    padding: 0;
   }
 
   .certificate-container {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
 
   .certificate-items {
@@ -62,18 +63,19 @@
     width: auto;
   }
   .project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .project-image {
-    width: 400px;
-  }
-  .project-item-2021 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 12px;
   }
+  .project-image {
+    width: 250px;
+  }
+  .project-item-2021 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
   /* footer */
   .icon-footer {
     list-style: none;

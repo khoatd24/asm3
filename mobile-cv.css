@@ -1,0 +1,33 @@
+@media screen and (max-width: 500px) {
+  .container {
+    width: auto;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .goals,
+  .team,
+  .timeline,
+  .scopes {
+    border-bottom: 8px solid #1971c2;
+  }
+
+  .goals-items,
+  .team-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timeline-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .scopes-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

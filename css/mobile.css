@@ -1,56 +1,55 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   #banner {
     position: relative;
     background-image: linear-gradient(
         rgba(34, 34, 34, 0.6),
         rgba(34, 34, 34, 0.6)
       ),
-      url(/Assignment\ 03\ Stater/images/banner.jpg);
+      url(/images/banner.jpg);
     background-size: cover;
     color: #fff;
   }
 
-  /* Navigation Bar */
-
   .nav-container {
     display: flex;
+    flex-direction: column;
     flex-shrink: 0;
+    justify-content: flex-start;
+    padding: 24px;
   }
-
+  .nav-container .navbar-items {
+    border: none !important;
+    width: 100%;
+  }
   .avata {
     display: none;
   }
   .avata-center {
-    margin-left: 56px;
+    margin: 0;
   }
   .info-center {
     display: none;
   }
-
-  /* Mục tiêu */
+  /* Mục tiêu nghề nghiệp- Thông tin cá nhân */
   .bg-container {
-    display: grid;
-    grid-template-columns: repeat(2, 380px);
+    display: flex;
+    flex-direction: column;
   }
 
-  /* Kinh Nghiệm,..., */
+  /* Kinh nghiệm, ..., */
   .job-info-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   /* Chứng chỉ giải thưởng */
   .certificate {
     width: auto;
-    padding: 0;
   }
 
   .certificate-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
   }
 
   .certificate-items {
@@ -63,19 +62,18 @@
     width: auto;
   }
   .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
   .project-image {
-    width: 250px;
+    width: 400px;
   }
   .project-item-2021 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
-
   /* footer */
   .icon-footer {
     list-style: none;
