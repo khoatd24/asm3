@@ -1,0 +1,43 @@
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.timeline {
+  grid-column: 3/ 4;
+  grid-row: 1/ -1;
+}
+
+.goals {
+  display: flex;
+  flex-direction: column;
+}
+
+.goals-items {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 12px;
+}
+
+.goals-items h4,
+p {
+  margin: 0;
+}
+
+.icon-flag {
+  width: 48px;
+  height: 48px;
+}
+
+/* Team */
+.icon-user {
+  width: 24px;
+  height: 24px;
+}

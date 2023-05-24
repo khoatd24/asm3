@@ -1,0 +1,86 @@
+@media screen and (max-width: 768px) {
+  #banner {
+    position: relative;
+    background-image: linear-gradient(
+        rgba(34, 34, 34, 0.6),
+        rgba(34, 34, 34, 0.6)
+      ),
+      url(/Assignment\ 03\ Stater/images/banner.jpg);
+    background-size: cover;
+    color: #fff;
+  }
+
+  /* Navigation Bar */
+
+  .nav-container {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .avata {
+    display: none;
+  }
+  .avata-center {
+    margin-left: 56px;
+  }
+  .info-center {
+    display: none;
+  }
+
+  /* Mục tiêu */
+  .bg-container {
+    display: grid;
+    grid-template-columns: repeat(2, 380px);
+  }
+
+  /* Kinh Nghiệm,..., */
+  .job-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: auto;
+  }
+
+  /* Chứng chỉ giải thưởng */
+  .certificate {
+    width: auto;
+    padding: 0;
+  }
+
+  .certificate-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .certificate-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Dự án */
+  .project {
+    width: auto;
+  }
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .project-image {
+    width: 250px;
+  }
+  .project-item-2021 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+  }
+
+  /* footer */
+  .icon-footer {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+  }
+}
