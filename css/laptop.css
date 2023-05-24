@@ -277,8 +277,10 @@
   display: flex;
 }
 .text-blue {
+  display: inline-block;
   width: 56px;
   height: 24px;
+  line-height: 24px;
   background-color: #339af0;
   border-radius: 10px;
   text-align: center;
