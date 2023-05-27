@@ -102,12 +102,16 @@
 }
 
 /* Mục tiêu nghề nghiệp và thông tin cá nhân */
-.bg-grey {
+/* .bg-grey {
   padding-left: 32px;
-}
-.bg-container {
+} */
+/* .bg-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+} */
+
+.bg-container {
+  margin: 0 auto;
 }
 
 .target,
@@ -211,7 +215,9 @@
 .interest p {
   font-size: 12px;
 }
-
+.job-info-container .text-start {
+  align-self: flex-start;
+}
 /* Chứng chỉ - Giải thưởng */
 
 .certificate {
